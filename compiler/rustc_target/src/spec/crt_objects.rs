@@ -122,3 +122,13 @@ pub(super) fn pre_wasi_self_contained() -> CrtObjects {
 pub(super) fn post_wasi_self_contained() -> CrtObjects {
     new(&[])
 }
+
+/*
+pub(super) fn pre_msdos6() -> CrtObjects {
+    all(todo!())
+}
+
+pub(super) fn post_msdos6() -> CrtObjects {
+    new(&[])
+}
+*/

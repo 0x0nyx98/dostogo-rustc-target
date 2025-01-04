@@ -231,6 +231,9 @@
 //@ revisions: i686_unknown_linux_musl
 //@ [i686_unknown_linux_musl] compile-flags: --target i686-unknown-linux-musl
 //@ [i686_unknown_linux_musl] needs-llvm-components: x86
+//@ revisions: i686_unknown_msdos6
+//@ [i686_unknown_msdos6] compile-flags: --target i686-unknown-msdos6
+//@ [i686_unknown_msdos6] needs-llvm-components: x86
 //@ revisions: i686_unknown_netbsd
 //@ [i686_unknown_netbsd] compile-flags: --target i686-unknown-netbsd
 //@ [i686_unknown_netbsd] needs-llvm-components: x86
