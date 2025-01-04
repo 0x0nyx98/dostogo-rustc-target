@@ -1,7 +1,7 @@
-use crate::spec::crt_objects;
+//use crate::spec::crt_objects;
 use crate::spec::{Cc, LinkerFlavor, Lld, RelocModel, StackProbeType, TargetOptions};
 
-pub fn opts() -> TargetOptions {
+pub(crate) fn opts() -> TargetOptions {
     TargetOptions {
         os: "MS-DOS".into(),
         linker: Some("rust-lld".into()),

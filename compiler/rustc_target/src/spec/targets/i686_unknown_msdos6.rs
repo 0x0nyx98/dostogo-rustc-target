@@ -1,6 +1,6 @@
 use crate::spec::{base, PanicStrategy, Target, TargetMetadata};
 
-pub fn target() -> Target {
+pub(crate) fn target() -> Target {
     let mut base = base::msdos6::opts();
     base.cpu = "i686".into();
     base.disable_redzone = true;
