@@ -1,0 +1,7 @@
+# Includes one of the default files in src/bootstrap/defaults
+profile = "compiler"
+change-id = 134650
+
+[build]
+# target = ["x86_64-unknown-linux-gnu"]
+target = ["i686-unknown-msdos6"]
