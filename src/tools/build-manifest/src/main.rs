@@ -185,6 +185,8 @@ static TARGETS: &[&str] = &[
     "x86_64-unknown-redox",
     "x86_64-unknown-hermit",
     "x86_64-unknown-uefi",
+    
+    "i686-unknown-msdos6",
 ];
 
 /// This allows the manifest to contain rust-docs for hosts that don't build
