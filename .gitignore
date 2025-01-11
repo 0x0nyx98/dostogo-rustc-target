@@ -40,6 +40,13 @@ config.mk
 config.stamp
 no_llvm_build
 
+## cc
+cc-rs/target
+cc-rs/Cargo.lock
+cc-rs/.idea
+cc-rs/*.iml
+cc-rs/.github
+
 ## Build
 /dl/
 /doc/

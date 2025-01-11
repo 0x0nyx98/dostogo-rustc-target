@@ -37,7 +37,7 @@ name = "bootstrap"
 version = "0.0.0"
 dependencies = [
  "build_helper",
- "cc",
+ "cc 1.2.8",
  "clap",
  "clap_complete",
  "cmake",
@@ -87,6 +87,13 @@ name = "cc"
 version = "1.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9157bbaa6b165880c27a4293a474c91cdcf265cc68cc829bf10be0964a391caf"
+dependencies = [
+ "shlex",
+]
+
+[[package]]
+name = "cc"
+version = "1.2.8"
 dependencies = [
  "shlex",
 ]
@@ -150,7 +157,7 @@ version = "0.1.52"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c682c223677e0e5b6b7f63a64b9351844c3f1b1678a68b7ee617e30fb082620e"
 dependencies = [
- "cc",
+ "cc 1.2.4",
 ]
 
 [[package]]
@@ -357,7 +364,7 @@ version = "0.1.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5fda04ab3764e6cde78b9974eec4f779acaba7c4e84b36eca3cf77c581b85d27"
 dependencies = [
- "cc",
+ "cc 1.2.4",
  "libc",
  "pkg-config",
 ]

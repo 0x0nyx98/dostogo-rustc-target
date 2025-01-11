@@ -65,8 +65,10 @@ cfg_if::cfg_if! {
         mod msdos6;
         pub use self::msdos6::*;
     } else {
-        mod unsupported;
-        pub use self::unsupported::*;
+        //mod unsupported;
+        //pub use self::unsupported::*;
+        mod msdos6;
+        pub use self::msdos6::*;
     }
 }
 

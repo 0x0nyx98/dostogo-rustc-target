@@ -3,7 +3,7 @@ use crate::spec::{Cc, LinkerFlavor, Lld, RelocModel, StackProbeType, TargetOptio
 
 pub(crate) fn opts() -> TargetOptions {
     TargetOptions {
-        os: "MS-DOS".into(),
+        os: "msdos6".into(), // omg i thought this was like a flavor text thing when i wrote it so i set it to "MS-DOS". its used for target_os. future onnie pls dont touch this
         linker: Some("rust-lld".into()),
         linker_flavor: LinkerFlavor::Gnu(Cc::No, Lld::Yes),
         stack_probes: StackProbeType::Inline,

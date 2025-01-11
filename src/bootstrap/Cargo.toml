@@ -36,7 +36,7 @@ test = false
 # Most of the time updating these dependencies requires modifications to the
 # bootstrap codebase(e.g., https://github.com/rust-lang/rust/issues/124565);
 # otherwise, some targets will fail. That's why these dependencies are explicitly pinned.
-cc = "=1.2.4"
+cc = { path = "../../cc-rs" }
 cmake = "=0.1.52"
 
 build_helper = { path = "../build_helper" }
