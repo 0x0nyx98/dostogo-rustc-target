@@ -72,6 +72,9 @@ cfg_if::cfg_if! {
     }
 }
 
+mod msdos6;
+pub use self::msdos6::*; // whyyyyyyyyyyyyyyyyy :sob:
+
 cfg_if::cfg_if! {
     // Fuchsia components default to full backtrace.
     if #[cfg(target_os = "fuchsia")] {
