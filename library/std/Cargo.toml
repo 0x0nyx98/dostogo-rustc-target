@@ -139,7 +139,7 @@ test = true
 level = "warn"
 check-cfg = [
     'cfg(bootstrap)',
-    'cfg(target_arch, values("xtensa"))',
+    'cfg(target_arch, values("i686"))',
     'cfg(target_os, values("msdos6"))',
     # std use #[path] imports to portable-simd `std_float` crate
     # and to the `backtrace` crate which messes-up with Cargo list

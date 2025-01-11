@@ -1328,7 +1328,7 @@ def main():
         )
 
     exit_code = 0
-    success_word = "successfully"
+    success_word = "successfully :3"
     try:
         bootstrap(args)
     except (SystemExit, KeyboardInterrupt) as error:

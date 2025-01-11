@@ -4,4 +4,4 @@ change-id = 134650
 
 [build]
 # target = ["x86_64-unknown-linux-gnu"]
-target = ["i686-unknown-msdos6"]
+target = ["x86_64-unknown-linux-gnu", "i686-unknown-msdos6"]
