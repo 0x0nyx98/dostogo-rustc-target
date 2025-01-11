@@ -1,4 +1,5 @@
 use crate::io;
+use crate::arch::asm;
 
 pub struct Stdin;
 pub struct Stdout;
@@ -24,6 +25,14 @@ impl Stdout {
 
 impl io::Write for Stdout {
     fn write(&mut self, buf: &[u8]) -> io::Result<usize> {
+        for c in buf {
+            unsafe { asm!(
+                "mov ah, 0x02",
+                "int 0x21",
+                in("dl") *c as i8
+            ); }
+        }
+
         Ok(buf.len())
     }
 
@@ -40,6 +49,14 @@ impl Stderr {
 
 impl io::Write for Stderr {
     fn write(&mut self, buf: &[u8]) -> io::Result<usize> {
+        for c in buf {
+            unsafe { asm!(
+                "mov ah, 0x02",
+                "int 0x21",
+                in("dl") *c as i8
+            ); }
+        }
+
         Ok(buf.len())
     }
 
